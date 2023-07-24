@@ -1,0 +1,185 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background: url(https://i.pinimg.com/originals/44/6e/3b/446e3b79395a287ca32f7977dd83b290.jpg);
+  background-size: cover;
+}
+
+.app-main {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.form-signin {
+
+  width: 500px;
+  padding: 15px;
+}
+
+.form-signin .checkbox {
+  font-weight: 400;
+}
+
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+
+.form-signin input[type="email"] {
+  margin-bottom: 10px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+
+
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+
+.register-form {
+  width: 550px;
+}
+
+.form-floating {
+  margin-bottom: 10px;
+}
+
+.form-control {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+
+}
+
+#header {
+  background-color: transparent !important;
+}
+
+#signin,
+#signup {
+  color: rgba(255, 255, 255, 0.4) !important;
+}
+
+
+.form-control:focus-visible {
+  box-shadow: none !important;
+}
+
+#labelFloatingName,
+#floatingName,
+#labelFloatingEmail,
+#floatingEmail,
+#labelFloatingPassword,
+#floatingPassword,
+#labelFloatingConfirmPassword,
+#floatingConfirmPassword {
+  color: red !important;
+}
+
+#floatingName:focus,
+#floatingEmail:focus,
+#floatingPassword:focus,
+#floatingConfirmPassword:focus {
+  background-color: rgba(0, 0, 0, 0.7) !important;
+}
+
+
+
+#labelFloatingName::after,
+#labelFloatingPassword::after,
+#labelFloatingEmail::after,
+#labelFloatingConfirmPassword::after {
+  background-color: transparent !important;
+}
+
+#registerBtn {
+  background-color: transparent !important;
+  transition: all 0.5s ease-in-out !important;
+}
+
+#registerBtn:hover {
+  background-color: rgba(200, 0, 0, 0.3) !important;
+  color: black !important;
+}
+
+#btnLogin {
+  background-color: transparent !important;
+  transition: all 0.5s ease-in-out !important;
+}
+
+#btnLogin:hover {
+  background-color: rgba(200, 0, 0, 0.3) !important;
+  color: black !important;
+}
+
+#headerInput::placeholder,
+#headerInput {
+  color: red;
+}
+
+#pepeDiv {
+  width: 1000px;
+  height: 600px;
+
+  margin: auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  background: url(/public/sad-pepe.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+
+}
+
+#pepeText {
+  position: absolute;
+  bottom: 170px;
+  right: -50px;
+  color: rgba(255, 255, 255, 0.2);
+  padding: 0 20px;
+}
+
+#appMainProfile {
+  width: 800px;
+  height: 600px;
+  margin: auto;
+  background-image: url(/public/pepe.gif);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  animation: pepeAnimation 3s linear;
+}
+
+@keyframes pepeAnimation {
+  0% {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    bottom: -500px;
+  }
+
+  50% {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    bottom: -250px;
+  }
+
+  100% {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    bottom: 50%;
+  }
+}
