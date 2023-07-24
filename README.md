@@ -9,6 +9,7 @@ git clone https://github.com/KirillEL/react-go-ctf
 2) 
 ```bash
 cd react-go-ctf
+npm i
 ```
 3) write
 ```bash
